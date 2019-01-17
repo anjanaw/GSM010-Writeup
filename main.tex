@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\usepackage{natbib,har2nat}
+\usepackage{xcolor,colortbl}
+\usepackage{forloop}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{multirow}
+\usepackage{outlines}
+\usepackage{subcaption}
+\usepackage[toc,page]{appendix}
+\graphicspath{ {images/} }
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+\begin{document}
+
+\includepdf{misc/cover.pdf}
+
+\title{Reasoning with Multi-modal Sensor Stream Data for m-Health Applications}
+\author{
+Anjana Wijekoon (a.wijekoon@rgu.ac.uk) \\ 
+Principle Supervisor: Prof. Nirmalie Wiratunga (n.wiratunga@rgu.ac.uk)}
+\date{}
+\maketitle 
+
+\input{abstract}
+
+\input{introduction}
+
+\input{literature_review}
+\clearpage
+
+\input{research_questions}
+
+\input{methodology}
+
+\input{ethical_issues}
+
+\input{impact}
+
+\input{time_management_plan}
+\clearpage
+
+\bibliographystyle{agsm}
+\bibliography{references}
+\clearpage
+
+\begin{appendices}
+
+\section{Sensor Fusion with SelfBACK}
+\label{appendix:selfback}
+\input{misc/selfback_results}
+
+\section{Vitae Personal Development Planner}
+\label{appendix:vitae}
+\includepdf[pages={1-3}]{misc/actionplan.pdf}
+
+\section{Project Ethical Review Outcome}
+\label{appendix:ethics}
+\includepdf[pages={1-3}]{misc/ethics_outcome.pdf}
+
+\end{appendices}
+
+\end{document}
